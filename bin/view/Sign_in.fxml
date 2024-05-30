@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="540.0" prefWidth="400.0" style="-fx-background-color: #4513A7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Sign_inController">
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="437.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/connexion0.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="id" layoutX="135.0" layoutY="189.0" style="-fx-border-radius: 50;" styleClass="element" />
+      <TextField fx:id="passe" layoutX="135.0" layoutY="252.0" styleClass="element" />
+      <Label layoutX="139.0" layoutY="68.0" prefHeight="25.0" prefWidth="141.0" text="Connectez vous..." textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="100.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/user_30px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="100.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/lock_30px.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="connect" layoutX="166.0" layoutY="344.0" mnemonicParsing="false" onAction="#connect" prefHeight="33.0" prefWidth="68.0" style="-fx-background-color: white; -fx-border-color: white;" text="Sign-in">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

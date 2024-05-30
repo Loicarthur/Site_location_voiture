@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="p" prefHeight="541.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.leslocationsController">
+   <children>
+      <GridPane layoutX="23.0" layoutY="14.0" prefHeight="268.0" prefWidth="299.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="26.0" prefWidth="133.0" text="Marque" />
+            <Label prefHeight="26.0" prefWidth="133.0" text="Model" GridPane.rowIndex="1" />
+            <Label prefHeight="26.0" prefWidth="133.0" text="Catégorie" GridPane.rowIndex="2" />
+            <Label prefHeight="26.0" prefWidth="133.0" text="Nom" GridPane.rowIndex="3" />
+            <Label prefHeight="26.0" prefWidth="133.0" text="Numero" GridPane.rowIndex="4" />
+            <TextField fx:id="tfmarquev" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="tfmodelv" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="tfcategoriev" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="tfnomc" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="tfnumc" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label prefHeight="26.0" prefWidth="133.0" text="Mail" GridPane.rowIndex="5" />
+            <Label prefHeight="26.0" prefWidth="133.0" text="Règlement" GridPane.rowIndex="6" />
+            <Label prefHeight="26.0" prefWidth="133.0" text="Date de début" GridPane.rowIndex="7" />
+            <TextField fx:id="tfmailc" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <JFXComboBox fx:id="cbregll" prefHeight="25.0" prefWidth="159.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <DatePicker fx:id="dpdatedl" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </DatePicker>
+            <Label prefHeight="26.0" prefWidth="133.0" text="Prix " GridPane.rowIndex="9" />
+            <TextField fx:id="tfprixl" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label prefHeight="26.0" prefWidth="133.0" text="Date de fin" GridPane.rowIndex="8" />
+            <DatePicker fx:id="dpdatefl" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tbvoiture" layoutX="373.0" layoutY="41.0" prefHeight="123.0" prefWidth="330.0">
+         <columns>
+            <TableColumn fx:id="cmarquev" prefWidth="112.0" text="Marque" />
+            <TableColumn fx:id="cmodelv" prefWidth="107.20001220703125" text="Model" />
+            <TableColumn fx:id="ccategoriev" prefWidth="108.800048828125" text="Catégorie" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblocation" layoutY="399.0" prefHeight="142.0" prefWidth="702.0">
+         <columns>
+            <TableColumn fx:id="cmarquev1" prefWidth="63.0" text="Marque" />
+            <TableColumn fx:id="cmodelv1" prefWidth="60.0" text="Model" />
+            <TableColumn fx:id="ccategoriev1" prefWidth="69.0" text="Catégorie" />
+            <TableColumn fx:id="cnomc1" prefWidth="66.0" text="Nom" />
+            <TableColumn fx:id="cnumc1" minWidth="0.0" prefWidth="70.0" text="Numero" />
+            <TableColumn fx:id="cmailc1" prefWidth="71.0" text="Mail" />
+            <TableColumn fx:id="cregll" prefWidth="76.0" text="Règlement" />
+            <TableColumn fx:id="cdatedl" prefWidth="77.0" text="Date debut" />
+            <TableColumn fx:id="cdatefl" prefWidth="77.0" text="Date fin" />
+            <TableColumn fx:id="cprixl" prefWidth="71.0" text="Prix" />
+         </columns>
+      </TableView>
+      <TableView layoutX="373.0" layoutY="212.0" prefHeight="123.0" prefWidth="330.0">
+         <columns>
+            <TableColumn fx:id="cnomc" prefWidth="108.0" text="Nom" />
+            <TableColumn fx:id="cnumc" prefWidth="101.0" text="Numéro" />
+            <TableColumn fx:id="cmailc" prefWidth="104.0" text="Mail" />
+         </columns>
+      </TableView>
+      <TextField fx:id="tfrechercherv" layoutX="373.0" layoutY="16.0" prefHeight="25.0" prefWidth="241.0" promptText="Rechercher voiture..." />
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="650.0" layoutY="13.0" onAction="#recherher_voiture" prefHeight="28.0" prefWidth="37.0" />
+      <TextField fx:id="tfrechercherc" layoutX="373.0" layoutY="187.0" prefHeight="25.0" prefWidth="241.0" promptText="Rechercher client..." />
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="650.0" layoutY="186.0" onAction="#rechercher_client" prefHeight="28.0" prefWidth="37.0" text="Rechercher" />
+      <HBox layoutY="282.0" prefHeight="115.0" prefWidth="285.0">
+         <children>
+            <VBox prefHeight="115.0" prefWidth="132.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <children>
+                  <JFXButton onAction="#ajouter_location" prefHeight="62.0" prefWidth="132.0" text="Ajouter">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="10.0" onAction="#supprimer_location" prefHeight="64.0" prefWidth="132.0" text="Supprimer">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="115.0" prefWidth="132.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <children>
+                  <JFXButton onAction="#modifier_location" prefHeight="62.0" prefWidth="132.0" text="Modifier">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="15.0" onAction="#imprimer_location" prefHeight="62.0" prefWidth="132.0" text="Imprimer" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

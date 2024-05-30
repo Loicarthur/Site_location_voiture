@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="552.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AccueilController">
+   <children>
+      <Pane prefHeight="126.0" prefWidth="246.0" />
+      <JFXButton fx:id="lepersonnel" layoutY="197.0" onAction="#lepersonnel" prefHeight="71.0" prefWidth="246.0" text="Le Personnel" />
+      <JFXButton fx:id="lesvoitures" layoutY="268.0" onAction="#lesvoitures" prefHeight="71.0" prefWidth="246.0" text="Les Voitures" />
+      <JFXButton fx:id="lesachats" layoutY="481.0" onAction="#lesachats" prefHeight="71.0" prefWidth="246.0" text="Les Achats" />
+      <JFXButton fx:id="leslocations" layoutY="410.0" onAction="#leslocations" prefHeight="71.0" prefWidth="246.0" text="Les Locations" />
+      <JFXButton fx:id="lesclients" layoutY="339.0" onAction="#lesclients" prefHeight="71.0" prefWidth="246.0" text="Les Clients" />
+      <JFXButton fx:id="lesparametres" layoutY="126.0" onAction="#lesparametres" prefHeight="71.0" prefWidth="246.0" text="Paramètres" />
+      <Pane layoutX="246.0" prefHeight="71.0" prefWidth="702.0" />
+      <Pane fx:id="child" layoutX="246.0" layoutY="71.0" prefHeight="479.0" prefWidth="702.0" />
+   </children>
+</AnchorPane>

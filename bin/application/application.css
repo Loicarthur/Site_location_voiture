@@ -1,0 +1,16 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button{
+	-fx-background-color: transparent;
+	-fx-font-style: normal;
+	-fx-font-family: Arial Narrow, sans-serif;
+	-fx-font-weight: bold;
+	-fx-border-color: #C4C4C4;
+	-fx-text-fill: white;
+	
+}
+.pane1{
+	-fx-background-color: #82B3DF;
+}
+.pane2{
+	-fx-background-color: #E4995E;
+}

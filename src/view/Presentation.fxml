@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="541.0" prefWidth="702.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="controller.Presentation">
+   <children>
+      <PieChart layoutX="165.0" layoutY="122.0" prefHeight="297.0" prefWidth="371.0" />
+      <Label layoutX="272.0" layoutY="38.0" text="Bilan des stocks" underline="true">
+         <font>
+            <Font name="Perpetua" size="28.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="actu" layoutX="313.0" layoutY="469.0" onAction="#actu" style="-fx-text-fill: black;" stylesheets="@../application/application.css" text="Actualiser" />
+   </children>
+</AnchorPane>
